@@ -2,7 +2,7 @@
 
 FROM phuslu/alpine:latest
 
-RUN curl -L git.io/get-goproxy-vps | bash
+RUN curl -L git.io/get-goproxy-vps
 
 ADD entrypoint.sh /entrypoint.sh
 
