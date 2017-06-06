@@ -1,11 +1,9 @@
-# deploy goproxy-vps to OPENSHIFT 3
+## goproxy-vps (a tls1.3/http2 secure proxy)
+[![Release](https://img.shields.io/badge/%20git.io-goproxy-blue.svg?style=social)](https://github.com/phuslu/goproxy/releases)
 
-1. secure route TLS Termination: Passthrough, e.g. yourhostname.44fs.preview.openshiftapps.com
+* 讨论区 https://github.com/phuslu/goproxy/issues?q=sort:updated-desc+is:open
 
-2. use XCA or openssl, sign a certificate for yourhostname.44fs.preview.openshiftapps.com, export cert+key.pem
-
-3. docker image: wangyi2005/goproxy-vps, Environment Variables: CONFIG_FILE_URL e.g.https://pastebin.com/raw/QUPuM4L6
-
-4. create a pastebin, server_name = ["yourhostname.44fs.preview.openshiftapps.com"], pem from cert+key.pem
-
-5. chrome+SwitchyOmega https proxy:  yourhostname.44fs.preview.openshiftapps.com:443
+## 文档
+* 简易教程 https://github.com/phuslu/goproxy/issues/1470
+* 配置介绍 https://github.com/phuslu/goproxy/blob/server.vps/goproxy-vps.toml
+* 编译步骤 https://github.com/phuslu/goproxy/blob/wiki/HowToBuild.md
